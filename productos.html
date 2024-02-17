@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div>
+  <nav class="navbar fixed-top" style="background-color: #E0122B;">
+    <!-- Logo en la esquina izquierda -->
+    <div class="logo">
+        <a href="#"><img src="imagenes/logo_pizzaraul_rojo.png" class="logo-img" alt="Logo de la marca"></a>
+    </div>
+    <!-- Botón de inicio de sesión en la esquina derecha -->
+    <div class="dropdown">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Iniciar Sesión
+        </button>
+        <ul class="optionsStore dropdown-menu dropdown-menu-end">
+            <li class="d-flex firstOp">
+                <div class="respAvatar">
+                    <img src="imagenes/img-avatar.png" class="cliente" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="separador light"></div>
+            </li>
+            <li><a class="dropdown-item" href="#"> <img class="ico-24" src="imagenes/user.svg" alt="perfil"> Mi perfil</a></li>
+            <li><a class="dropdown-item" href="#"><img class="ico-24" src="imagenes/shopping-bag.svg" alt="order">Mis pedidos</a></li>
+            <li><a class="dropdown-item" href="#"><img class="ico-24" src="imagenes/map-pin.svg" alt="direction">Mis direcciones</a></li>
+            <li><a class="dropdown-item" href="#"><img class="ico-24" src="imagenes/credit.svg" alt="credit">Mis tarjetas</a></li>
+            <li><a class="dropdown-item" href="#"><img class="ico-24" src="imagenes/credit-card.svg" alt="cuopon">Cupones</a></li>
+            <li><a class="btm-password dropdown-item" href="#">Cambiar contraseña<span class="material-icons-outlined ml-3"></span></a></li>
+            <li><a class="btn btn-yellow2 text-center upp w-100" href="#">Salir</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+              <a class="nav-link active" aria-current="page" href="prueba.html">Locales</a>
+              <a class="nav-link active" aria-current="page" href="contacto.html">Nosotros</a>
+              <a class="nav-link active" aria-current="page" href="segimiento.html">Segimiento de Pedidos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+<img src="imagenes/carrusel_2.png" alt="">
+<br>
+<br>
+<div class="container">
+    <h1>Catalogo</h1>
+</div>
+  <br>
+  <br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- Sección de Pizzas -->
+      <div class="section">
+        <h2 data-toggle="collapse" data-target="#pizzasCollapse">Pizzas</h2>
+        <div id="pizzasCollapse" class="collapse">
+          <br>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/americana.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizzeria Americana</h4>
+                <p class="card-text">Salsa de tomate, queso, pepperoni, salami y aceitunas. <br></p>
+                <p class="card-text">Precio: $<span class="precio">15</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/carnivora.png" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Carnivora</h4>
+                <p class="card-text">Sabor incomparado, pizza llena de peperoni, jamon, cabanosi y chorizo.</p>
+                <p class="card-text">Precio: $<span class="precio">16</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/pepperoni.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Pepperoni</h4>
+                <p class="card-text">Sabor incomparable de pepperoni americano y queso mozzarella.</p>
+                <p class="card-text">Precio: $<span class="precio">16</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+<br>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/mozarella.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Mozzarella</h4>
+                <p class="card-text">Para los amantes del queso una deliciosa pizza con nuestro queso mozzarella gratinado. <br></p>
+                <p class="card-text">Precio: $<span class="precio">15</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/vegetariana.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Vegetariana</h4>
+                <p class="card-text">Exquisita combinación de champiñones, aceitunas verdes, pimientos verdes, cebolla roja y queso mozzarella.</p>
+                <p class="card-text">Precio: $<span class="precio">16</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/hawaiana.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Hawaiana</h4>
+                <p class="card-text">El paraiso en la mesa! Se completa con jamón, jugosa piña y queso mozzarella.</p>
+                <p class="card-text">Precio: $<span class="precio">16</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- Sección de Complementos -->
+      <div class="section">
+        <h2 data-toggle="collapse" data-target="#complementosCollapse">Combos</h2>
+        <div id="complementosCollapse" class="collapse">
+          <br>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/combo1.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Combo 1</h4>
+                <p class="card-text">Pizza de aceituna + pizza de pepperoni + gaseosa de 1lt<br></p>
+                <p class="card-text">Precio: $<span class="precio">45</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/combo2.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Combo 2</h4>
+                <p class="card-text">Pizza americana + gaseosa 1lt</p>
+                <p class="card-text">Precio: $<span class="precio">36</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <br>
+                  <br>
+                  <br>
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/combo3.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Combo 3</h4>
+                <p class="card-text">Pizza de pepperoni y verduras + pizza de pepperoni y queso extra</p>
+                <p class="card-text">Precio: $<span class="precio">42</span></p>
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+      <!-- Sección de Combos -->
+      <div class="section">
+        <h2 data-toggle="collapse" data-target="#combosCollapse">Complementos</h2>
+        <div id="combosCollapse" class="collapse">
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/pandeajo.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pan de ajo</h4>
+                <p class="card-text">Pan sasonado con mantequilla, ajo y oregano<br></p>
+                <p class="card-text">Precio: $<span class="precio">5</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/pandeajoespecial.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pan de ajo especial</h4>
+                <p class="card-text">Pan sasonado con mantequilla, ajo, oregano y queso</p>
+                <p class="card-text">Precio: $<span class="precio">7</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <br>
+                  <br>
+                  <br>
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/rollsdejamon.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Rolls de jamon</h4>
+                <p class="card-text">6 Rollos de jamon y queso</p>
+                <p class="card-text">Precio: $<span class="precio">12</span></p>
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/alitas.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Alitas BBQ</h4>
+                <p class="card-text">Alitas de pollo fritos bañados en salsa BBQ<br></p>
+                <p class="card-text">Precio: $<span class="precio">15</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sección de Bebidas -->
+      <div class="section">
+        <h2 data-toggle="collapse" data-target="#bebidasCollapse">Bebidas</h2>
+        <div id="bebidasCollapse" class="collapse">
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/pepsipersonal.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pepsi Personal</h4>
+                <p class="card-text">Precio: $<span class="precio">2</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/pepsi1lt.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pepsi 1LT</h4>
+                <p class="card-text">Precio: $<span class="precio">4</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <br>
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/pepsi3lt.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Pepsi 3LT</h4>
+                <p class="card-text">Precio: $<span class="precio">8</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/sevenuppersonal.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Seven UP personal</h4>
+                <p class="card-text">Precio: $<span class="precio">2</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/sevenup1lt.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Seven UP 1LT</h4>
+                <p class="card-text">Precio: $<span class="precio">4</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <br>
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/sevenup3lt.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Seven UP 3LT</h4>
+                <p class="card-text">Precio: $<span class="precio">8</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <div class="row text-center">
+            <!-- Agregar más tarjetas de pizzas aquí -->
+           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top img-fluid" src="imagenes/concordiapersonal.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Concordia Personal</h4>
+                <p class="card-text">Precio: $<span class="precio">2</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/concordia1.5lt.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Concordia 1LT</h4>
+                <p class="card-text">Precio: $<span class="precio">4</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <br>
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card" style="width:400px">
+              <img class="card-img-top  img-fluid" src="imagenes/concordia3lt.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Concordia 3LT</h4>
+                <p class="card-text">Precio: $<span class="precio">8</span></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-primary" onclick="decrement(this)">-</button>
+                  <span class="contador mx-3 contador-pequeno">0</span>
+                  <button class="btn btn-primary" onclick="increment(this)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="text-center">
+<div class="row">
+  <div class="col-md-12">
+    <h3>Total a Pagar: $<span id="total">0</span></h3>
+  </div>
+</div>
+<button type="button" class="btn btn-success">Pagar</button>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer class="footer">
+    <div class="diver">
+       <div class="footer-row">
+          <div class="footer-links">
+             <h4>Compañia</h4>
+             <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Nuestros Servicios</a></li>
+                <li><a href="">Politica de privacidad</a></li>
+                <li><a href="">afiliate</a></li>
+                <li><a href="">Trabaja con nosotros</a></li>
+             </ul>
+          </div>
+          <div class="footer-links">
+             <h4>Ayuda</h4>
+             <ul>
+                <li><a href="">Preguntas</a></li>
+                <li><a href="">Compras</a></li>
+                <li><a href="">Envios</a></li>
+                <li><a href="">Estatus de orden</a></li>
+                <li><a href="">pago</a></li>
+             </ul>
+          </div> 
+          <div class="footer-links">
+             <h4>Siguenos</h4>
+             <br>
+             <divc class="sociak-link">
+               <a href=""><img src="imagenes/twitter.png" class="tp" alt=""></a>
+               <a href=""><img src="imagenes/linkendin.png" class="tp" alt=""></a>
+               <a href=""><img src="imagenes/instagram.png" class="tp" alt=""></a>
+               <a href=""><img src="imagenes/facebook.png" class="tp" alt=""></a>
+             </div>
+          </div>
+       </div>
+    </div>
+  </footer>
+
+  <script>
+    function increment(btn) {
+      let contadorElemento = btn.parentNode.querySelector('.contador');
+      let contador = parseInt(contadorElemento.innerText);
+      contador++;
+      contadorElemento.innerText = contador;
+      actualizarTotal();
+    }
+  
+    function decrement(btn) {
+      let contadorElemento = btn.parentNode.querySelector('.contador');
+      let contador = parseInt(contadorElemento.innerText);
+      if (contador > 0) {
+        contador--;
+        contadorElemento.innerText = contador;
+        actualizarTotal();
+      }
+    }
+  
+    function actualizarTotal() {
+      let total = 0;
+      document.querySelectorAll('.card').forEach(card => {
+        let precio = parseInt(card.querySelector('.precio').innerText);
+        let cantidad = parseInt(card.querySelector('.contador').innerText);
+        total += precio * cantidad;
+      });
+      document.getElementById('total').innerText = total;
+    }
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

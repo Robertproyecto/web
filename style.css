@@ -1,0 +1,111 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    align-self: center;
+}
+
+.dropdown {
+    align-self: center;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+.logo-cliente{
+    overflow: hidden;
+    border-radius: 50%;
+}
+.cliente{
+height: 50px;
+margin-left: 110px;
+}
+.navbar-nav li{
+margin-left: 2px;
+}
+.d-img{
+    object-fit: cover;
+
+}
+.carousel, slide{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    background-color: black;
+    margin-top: auto;
+}
+.footer-row{
+    display: flex;
+}
+.footer-links{
+    width: 15%;
+    padding: 0 15px;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 100px;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.footer-links ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    transition: a11 -3s ease;
+}
+.tp{
+    height: 20px;
+    }
+.ginch{
+    width: 100%;
+    height: 100%;
+}
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body{
+    background-image: url(imagenes/marmol.webp);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    }
+    .section {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .card {
+        background-color: #333;
+        color: #fff;
+      }
+      .card-title {
+        color: #fff;
+      }
+      .contador-pequeno {
+        font-size: 0.8rem;
+         }
+.tarjeta{
+display: flex;
+}
+#map {
+    height: 400px; 
+    width: 100%;
+     }
